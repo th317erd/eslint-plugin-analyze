@@ -1,2 +1,2 @@
-# eslint-plugin-analyze
-Statically analyze code to check for and predict possible runtime errors
+# eslint-plugin-ternary-parens
+ESLint plugin to enforce parentheses around ternary evaluation expression
