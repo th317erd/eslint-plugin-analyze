@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-analyze",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Statically analyze code to check for and predict possible runtime errors",
   "main": "index.js",
   "scripts": {
