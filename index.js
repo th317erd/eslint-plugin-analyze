@@ -10,7 +10,8 @@
 //------------------------------------------------------------------------------
 module.exports = {
   rules: {
-    'dangerous-diving': require('./lib/rules/dangerous-diving')
+    'dangerous-diving': require('./lib/rules/dangerous-diving'),
+    'function-args': require('./lib/rules/function-args'),
   },
   rulesConfig: {
     'dangerous-diving': 1,

@@ -26,8 +26,8 @@ ruleTester.run('function-args', rule, {
   ],
   invalid: [
     {
-      code: 'function test(hello) { return hello.world.test; }',
-      errors: ['Code failure when passed arguments ["undefined"]: Cannot read property \'world\' of undefined']
+      code: 'function test(hello) { var fs = require(\'fs\'); fs.writeFileSync(\'test.txt\', \'Testing!!\');return (hello.world.test(function(){})).toString(); }',
+      errors: ['Code failure on line 1 when passed arguments test(undefined): Cannot read property of undefined']
     }
   ]
 });
