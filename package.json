@@ -4,7 +4,7 @@
   "description": "Statically analyze code to check for and predict possible runtime errors",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha tests/lib/rules/*"
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register tests/lib/rules/*"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,13 @@
   },
   "homepage": "https://github.com/eslint-plugin-analyze#readme",
   "devDependencies": {
+    "babel-core": "^6.24.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
     "eslint": "^3.13.1",
     "mocha": "^3.2.0"
   },
